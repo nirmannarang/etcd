@@ -75,6 +75,7 @@ function main {
     if [ ${GOOS} == "linux" ]; then
       TARGET_ARCHS+=("arm64")
       TARGET_ARCHS+=("ppc64le")
+      TARGET_ARCHS+=("s390x")
 #  TODO: Reenable when https://github.com/etcd-io/etcd/issues/12496 is fixed.
 #      TARGET_ARCHS+=("s390x")
     fi
